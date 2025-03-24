@@ -1,0 +1,18 @@
+import pyautogui
+import time
+
+# Imposta il range tramite due valori interi
+inizio = 2660
+fine = 2670
+
+# Avviso iniziale per selezionare la finestra dove vuoi che venga eseguito lo script di brute force
+print("Hai 5 secondi per cliccare sulla finestra dove inserire il codice...")
+time.sleep(5)  # ti dà il tempo di cliccare sulla finestra target
+
+# Inizia brute force dal valore che hai messo nelle variabili inizio e fine
+for i in range(inizio, fine):
+    codice = f"{i:04}"  # formatta con zeri: 0000, 0001, ..., 9999
+    print(f"Inserisco codice: {codice}")
+    pyautogui.write(codice)  # scrive il codice
+    pyautogui.press("enter")  # preme invio
+    time.sleep(0.5)  # attende 0.5 secondi prima del prossimo codice
