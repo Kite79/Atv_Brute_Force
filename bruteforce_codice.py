@@ -1,9 +1,12 @@
 import pyautogui
 import time
 
+print("Brute Force By Kite79")
+print("Benvenuto nella mia app!")
 # Imposta il range tramite due valori interi
-inizio = 2660
-fine = 2670
+# Input da console
+inizio = int(input("Inserisci il valore iniziale del range: "))
+fine = int(input("Inserisci il valore finale del range: "))
 
 # Avviso iniziale per selezionare la finestra dove vuoi che venga eseguito lo script di brute force
 print("Hai 5 secondi per cliccare sulla finestra dove inserire il codice...")
